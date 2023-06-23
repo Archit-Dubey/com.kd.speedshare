@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/actions_file_list_toggle_shortcut" android:visible="true" android:orderInCategory="98" android:title="@string/butn_addShortcut"/>
+    <item android:id="@+id/actions_file_list_mount_directory" android:visible="false" android:orderInCategory="99" android:title="@string/butn_mountDirectory"/>
+</menu>

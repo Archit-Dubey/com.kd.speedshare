@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/app_background" android:layout_width="match_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <androidx.cardview.widget.CardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/short_content_width_padding" android:layout_marginTop="15dp" android:layout_marginRight="@dimen/short_content_width_padding">
+            <LinearLayout android:orientation="vertical" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="25dp" android:paddingTop="15dp" android:paddingRight="25dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_connectionHelp" style="@style/TextAppearance.Secondary"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/connection_option_guide" android:background="?attr/rectSelector" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/helpicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="30dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ques_needHelp" style="@style/TextAppearance.Primary.SingleLine"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/connection_option_hotspot" android:background="?attr/rectSelector" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/hotspoticon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="30dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/butn_startHotspot" style="@style/TextAppearance.Primary.SingleLine"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/connection_option_network" android:background="?attr/rectSelector" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/wifiicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="30dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/butn_useExistingNetwork" style="@style/TextAppearance.Primary.SingleLine"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/connection_option_scan" android:background="?attr/rectSelector" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/qrcodeicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="30dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/butn_scanQrCode" style="@style/TextAppearance.Primary.SingleLine"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/connection_option_manual_ip" android:background="?attr/rectSelector" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <ImageView android:background="@drawable/ipaddressicon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="30dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/butn_enterIpAddress" style="@style/TextAppearance.Primary.SingleLine"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/short_content_width_padding" android:layout_marginRight="@dimen/short_content_width_padding">
+            <androidx.appcompat.widget.AppCompatButton android:id="@+id/connection_option_devices" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/butn_open" android:layout_alignParentRight="true" style="?attr/borderlessButtonStyle"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/text_useKnownDevice" android:layout_toLeftOf="@+id/connection_option_devices" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/CondensedTitleStyle"/>
+        </RelativeLayout>
+        <fragment android:name="com.genonbeta.TrebleShot.fragment.CustomNetworkDeviceListFragment" android:id="@+id/connection_option_device_list" android:tag="deviceListFragment" android:layout_width="match_parent" android:layout_height="260dp"/>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

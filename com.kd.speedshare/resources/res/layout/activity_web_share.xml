@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/app_background" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:id="@+id/app_bar" android:background="@drawable/app_background" android:layout_width="match_parent" android:layout_height="176dp">
+        <com.google.android.material.appbar.CollapsingToolbarLayout android:id="@+id/toolbar_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:contentScrim="?attr/colorPrimary" app:layout_scrollFlags="13" app:titleEnabled="false" app:toolbarId="@+id/toolbar">
+            <TextView android:textColor="#ffffff" android:gravity="center" android:paddingLeft="@dimen/short_content_width_padding" android:paddingTop="20dp" android:paddingRight="@dimen/short_content_width_padding" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="142dp" android:layout_marginTop="?attr/actionBarSize" android:text="@string/text_webShareInfo" style="@style/TextAppearance.Primary.Big"/>
+            <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize" app:layout_collapseMode="1"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+    <fragment android:name="com.genonbeta.TrebleShot.fragment.ActiveConnectionListFragment" android:id="@+id/mainContainer" android:layout_width="match_parent" android:layout_height="688dp" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+    <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/content_fab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" app:srcCompat="@drawable/ic_web_white_24dp"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

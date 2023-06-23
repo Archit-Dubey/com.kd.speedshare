@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:id="@+id/container" android:background="?attr/rectSelector" android:padding="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/padding_list_content_parent_layout_orientation">
+    <com.genonbeta.TrebleShot.view.ComparativeRelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="8dp" app:baseOnSmallerLength="false">
+        <ImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/text_image"/>
+        <ImageView android:id="@+id/imageStatus" android:background="?attr/rippleBackground" android:padding="3dp" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" app:tint="?attr/colorControlNormal"/>
+    </com.genonbeta.TrebleShot.view.ComparativeRelativeLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/infoContainer" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" style="@style/TextAppearance.Primary.SingleLine"/>
+        <TextView android:ellipsize="middle" android:id="@+id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Secondary.Small.SingleLine"/>
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/menu" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/abouticon" style="@style/OverflowButton"/>
+    </LinearLayout>
+</LinearLayout>

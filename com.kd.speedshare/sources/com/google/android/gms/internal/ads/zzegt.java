@@ -1,0 +1,160 @@
+package com.google.android.gms.internal.ads;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.List;
+import java.util.RandomAccess;
+
+/* compiled from: com.google.android.gms:play-services-ads-lite@@19.2.0 */
+public final class zzegt extends zzeel<String> implements zzegw, RandomAccess {
+    private static final zzegt zzifx;
+    private static final zzegw zzify = zzifx;
+    private final List<Object> zzifz;
+
+    public zzegt() {
+        this(10);
+    }
+
+    public zzegt(int i) {
+        this((ArrayList<Object>) new ArrayList(i));
+    }
+
+    private zzegt(ArrayList<Object> arrayList) {
+        this.zzifz = arrayList;
+    }
+
+    public final int size() {
+        return this.zzifz.size();
+    }
+
+    public final boolean addAll(Collection<? extends String> collection) {
+        return addAll(size(), collection);
+    }
+
+    public final boolean addAll(int i, Collection<? extends String> collection) {
+        zzbda();
+        if (collection instanceof zzegw) {
+            collection = ((zzegw) collection).zzbgg();
+        }
+        boolean addAll = this.zzifz.addAll(i, collection);
+        this.modCount++;
+        return addAll;
+    }
+
+    public final void clear() {
+        zzbda();
+        this.zzifz.clear();
+        this.modCount++;
+    }
+
+    public final void zzaj(zzeer zzeer) {
+        zzbda();
+        this.zzifz.add(zzeer);
+        this.modCount++;
+    }
+
+    public final Object zzhd(int i) {
+        return this.zzifz.get(i);
+    }
+
+    private static String zzal(Object obj) {
+        if (obj instanceof String) {
+            return (String) obj;
+        }
+        if (obj instanceof zzeer) {
+            return ((zzeer) obj).zzbdc();
+        }
+        return zzegd.zzz((byte[]) obj);
+    }
+
+    public final List<?> zzbgg() {
+        return Collections.unmodifiableList(this.zzifz);
+    }
+
+    public final zzegw zzbgh() {
+        return zzbcy() ? new zzeje(this) : this;
+    }
+
+    public final /* synthetic */ Object set(int i, Object obj) {
+        zzbda();
+        return zzal(this.zzifz.set(i, (String) obj));
+    }
+
+    public final /* bridge */ /* synthetic */ boolean retainAll(Collection collection) {
+        return super.retainAll(collection);
+    }
+
+    public final /* bridge */ /* synthetic */ boolean removeAll(Collection collection) {
+        return super.removeAll(collection);
+    }
+
+    public final /* bridge */ /* synthetic */ boolean remove(Object obj) {
+        return super.remove(obj);
+    }
+
+    public final /* synthetic */ Object remove(int i) {
+        zzbda();
+        Object remove = this.zzifz.remove(i);
+        this.modCount++;
+        return zzal(remove);
+    }
+
+    public final /* bridge */ /* synthetic */ boolean zzbcy() {
+        return super.zzbcy();
+    }
+
+    public final /* synthetic */ void add(int i, Object obj) {
+        zzbda();
+        this.zzifz.add(i, (String) obj);
+        this.modCount++;
+    }
+
+    public final /* bridge */ /* synthetic */ boolean add(Object obj) {
+        return super.add(obj);
+    }
+
+    public final /* bridge */ /* synthetic */ int hashCode() {
+        return super.hashCode();
+    }
+
+    public final /* bridge */ /* synthetic */ boolean equals(Object obj) {
+        return super.equals(obj);
+    }
+
+    public final /* synthetic */ zzegm zzfs(int i) {
+        if (i >= size()) {
+            ArrayList arrayList = new ArrayList(i);
+            arrayList.addAll(this.zzifz);
+            return new zzegt((ArrayList<Object>) arrayList);
+        }
+        throw new IllegalArgumentException();
+    }
+
+    public final /* synthetic */ Object get(int i) {
+        Object obj = this.zzifz.get(i);
+        if (obj instanceof String) {
+            return (String) obj;
+        }
+        if (obj instanceof zzeer) {
+            zzeer zzeer = (zzeer) obj;
+            String zzbdc = zzeer.zzbdc();
+            if (zzeer.zzbdd()) {
+                this.zzifz.set(i, zzbdc);
+            }
+            return zzbdc;
+        }
+        byte[] bArr = (byte[]) obj;
+        String zzz = zzegd.zzz(bArr);
+        if (zzegd.zzy(bArr)) {
+            this.zzifz.set(i, zzz);
+        }
+        return zzz;
+    }
+
+    static {
+        zzegt zzegt = new zzegt();
+        zzifx = zzegt;
+        zzegt.zzbcz();
+    }
+}

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:id="@+id/action_mode_file_open" android:visible="false" android:title="@string/butn_open"/>
+    <item android:id="@+id/action_mode_file_show" android:visible="false" android:title="@string/butn_show"/>
+    <item android:id="@+id/action_mode_file_eject_directory" android:visible="false" android:title="@string/butn_ejectDirectory"/>
+    <item android:id="@+id/action_mode_file_change_save_path" android:visible="false" android:title="@string/butn_changeSavePath"/>
+    <item android:id="@+id/action_mode_file_toggle_shortcut" android:visible="false" android:title="@string/butn_removeShortcut"/>
+    <item android:id="@+id/action_mode_file_copy_here" android:visible="false" android:title="@string/butn_copyHere"/>
+    <item android:id="@+id/action_mode_file_rename" android:title="@string/butn_rename"/>
+    <item android:id="@+id/action_mode_file_delete" android:title="@string/butn_delete"/>
+</menu>

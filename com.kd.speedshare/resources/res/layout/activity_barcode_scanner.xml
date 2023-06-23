@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <fragment android:name="com.genonbeta.TrebleShot.fragment.BarcodeConnectFragment" android:id="@+id/barcodeScannerFragment" android:tag="scannerFragment" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:background="?attr/backgroundGradientTop" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

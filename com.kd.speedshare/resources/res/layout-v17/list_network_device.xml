@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/abouticon" android:layout_width="match_parent" android:layout_height="wrap_content" app:cardBackgroundColor="#ffffff">
+    <RelativeLayout android:id="@+id/container" android:background="?attr/rectSelector" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListContentLayoutStyle.WithOverflowButton">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/menu" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/abouticon" style="@style/OverflowButton"/>
+        <FrameLayout android:id="@+id/imageContainer" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" style="@style/ListContentIconStyle">
+            <ImageView android:id="@+id/image" android:layout_width="match_parent" android:layout_height="match_parent" android:contentDescription="@string/text_image"/>
+            <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center|end" android:id="@+id/imageStatus" android:background="?attr/rippleBackground" android:padding="3dp" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" app:tint="?attr/colorControlNormal"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/menu" android:layout_toRightOf="@+id/imageContainer" android:layout_centerVertical="true" android:layout_toStartOf="@+id/menu" android:layout_toEndOf="@+id/imageContainer">
+            <TextView android:id="@+id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Primary.Big.SingleLine"/>
+            <View android:layout_width="wrap_content" android:layout_height="@dimen/padding_list_content_two_lines_separation_height"/>
+            <TextView android:textSize="@dimen/font_size_small" android:id="@+id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Secondary"/>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

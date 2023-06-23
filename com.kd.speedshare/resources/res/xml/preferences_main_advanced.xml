@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="@string/text_advanced">
+        <CheckBoxPreference android:icon="@drawable/loadthumnailsicon" android:title="@string/text_loadThumbnails" android:key="load_thumbnails" android:summary="@string/text_loadThumbnailsSummary" android:defaultValue="true"/>
+        <CheckBoxPreference android:icon="@drawable/leaveapp" android:title="@string/text_killServiceAfterLeaving" android:key="kill_service_on_exit" android:summary="@string/text_killServiceAfterLeavingSummary" android:defaultValue="true"/>
+        <CheckBoxPreference android:icon="@drawable/dicoverability" android:title="@string/text_networkServiceDiscovery" android:key="nsd_enabled" android:summary="@string/text_networkServiceDiscoverySummary" android:defaultValue="true"/>
+        <CheckBoxPreference android:icon="@drawable/autostarticon" android:title="@string/text_autoStart" android:key="allow_autoconnect" android:summary="@string/text_autoStartSummary" android:defaultValue="false"/>
+        <CheckBoxPreference android:icon="@drawable/systemapps" android:title="@string/text_showSystemApps" android:key="show_system_apps" android:summary="@string/text_showSystemAppsSummary" android:defaultValue="false"/>
+    </PreferenceCategory>
+</PreferenceScreen>

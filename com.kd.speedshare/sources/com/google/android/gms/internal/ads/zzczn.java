@@ -1,0 +1,17 @@
+package com.google.android.gms.internal.ads;
+
+import android.os.Bundle;
+import java.util.ArrayList;
+
+/* compiled from: com.google.android.gms:play-services-ads@@19.2.0 */
+final /* synthetic */ class zzczn implements zzddz {
+    private final ArrayList zzgrv;
+
+    zzczn(ArrayList arrayList) {
+        this.zzgrv = arrayList;
+    }
+
+    public final void zzs(Object obj) {
+        ((Bundle) obj).putStringArrayList("ad_types", this.zzgrv);
+    }
+}

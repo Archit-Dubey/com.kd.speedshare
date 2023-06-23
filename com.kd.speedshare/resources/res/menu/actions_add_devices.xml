@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <item android:icon="@drawable/helpicon" android:id="@+id/actions_add_devices_help" android:title="@string/butn_help" app:showAsAction="always"/>
+    <item android:icon="@drawable/checkicon" android:id="@+id/actions_add_devices_done" android:title="@string/butn_done" app:showAsAction="always"/>
+</menu>

@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="100" android:versionName="1.1" android:compileSdkVersion="28" android:compileSdkVersionCodename="9" package="com.kd.speedshare" platformBuildVersionCode="28" platformBuildVersionName="9">
+    <uses-sdk android:minSdkVersion="16" android:targetSdkVersion="28"/>
+    <uses-permission android:name="com.android.vending.BILLING"/>
+    <uses-permission android:name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_SETTINGS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.VIBRATE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE"/>
+    <application android:theme="@style/Theme.TrebleShot" android:label="@string/text_appName" android:icon="@mipmap/ic_launcher" android:name="com.genonbeta.TrebleShot.App" android:allowBackup="true" android:supportsRtl="true" android:fullBackupContent="true" android:appComponentFactory="@string/app_name" android:isSplitRequired="true">
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar" android:label="@string/text_donate" android:name="com.genonbeta.TrebleShot.activity.DonationActivity"/>
+        <meta-data android:name="com.google.android.gms.ads.APPLICATION_ID" android:value="ca-app-pub-7380176467514090~7399660134"/>
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar" android:label="@string/text_appName" android:name="com.genonbeta.TrebleShot.activity.HomeActivity" android:launchMode="singleTask">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar.StaticStatusBar" android:label="@string/text_appName" android:name="com.genonbeta.TrebleShot.activity.ShareActivity">
+            <intent-filter>
+                <action android:name="genonbeta.intent.action.TREBLESHOT_SEND_TEXT"/>
+                <action android:name="android.intent.action.SEND"/>
+                <action android:name="android.intent.action.SEND_MULTIPLE"/>
+                <action android:name="genonbeta.intent.action.TREBLESHOT_SEND"/>
+                <action android:name="genonbeta.intent.action.TREBLESHOT_SEND_MULTIPLE"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <data android:mimeType="*/*"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar.StaticStatusBar" android:label="@string/text_addDevicesToTransfer" android:name="com.genonbeta.TrebleShot.activity.AddDevicesToTransferActivity"/>
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar.StaticStatusBar" android:label="@string/text_fileExplorer" android:name="com.genonbeta.TrebleShot.activity.FileExplorerActivity"/>
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar.StaticStatusBar" android:label="@string/text_textStream" android:name="com.genonbeta.TrebleShot.activity.TextStreamActivity"/>
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar.StaticStatusBar" android:label="@string/text_connectDevices" android:name="com.genonbeta.TrebleShot.activity.ConnectionManagerActivity"/>
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar.StaticStatusBar" android:label="@string/text_send" android:name="com.genonbeta.TrebleShot.activity.ContentSharingActivity" android:launchMode="singleTask"/>
+        <activity android:label="@string/text_fileExplorer" android:name="com.genonbeta.TrebleShot.activity.FilePickerActivity"/>
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar.StaticStatusBar" android:label="@string/text_transactionViewer" android:name="com.genonbeta.TrebleShot.activity.ViewTransferActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="file"/>
+                <data android:scheme="content"/>
+                <data android:mimeType="*/*"/>
+                <data android:host="*"/>
+                <data android:pathPattern=".*\\.tshare"/>
+                <data android:pathPattern=".*\\..*\\.tshare"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/text_manageDevices" android:name="com.genonbeta.TrebleShot.activity.ManageDevicesActivity"/>
+        <activity android:label="@string/butn_search" android:name="com.genonbeta.TrebleShot.activity.SearchActivity"/>
+        <activity android:label="@string/text_preferences" android:name="com.genonbeta.TrebleShot.activity.PreferencesActivity"/>
+        <activity android:label="@string/text_textEditor" android:name="com.genonbeta.TrebleShot.activity.TextEditorActivity"/>
+        <activity android:theme="@style/Base.Theme.AppCompat.Dialog" android:name="com.genonbeta.TrebleShot.activity.ChangeStoragePathActivity">
+            <intent-filter>
+                <action android:name="com.genonbeta.intent.action.UPDATE_STORAGE_PATH"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar.StaticStatusBar" android:label="@string/text_about" android:name="com.genonbeta.TrebleShot.activity.AboutActivity"/>
+        <activity android:label="@string/text_thirdPartyLibraries" android:name="com.genonbeta.TrebleShot.activity.ThirdPartyLibrariesActivity"/>
+        <activity android:label="@string/text_changelog" android:name="com.genonbeta.TrebleShot.activity.ChangelogActivity"/>
+        <activity android:theme="@style/Theme.TrebleShot.BarcodeScannerActivity" android:label="@string/text_scanQrCode" android:name="com.genonbeta.TrebleShot.activity.BarcodeScannerActivity"/>
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar" android:label="@string/text_welcome" android:name="com.genonbeta.TrebleShot.activity.WelcomeActivity"/>
+        <activity android:theme="@style/Theme.TrebleShot.NoActionBar.StaticStatusBar" android:label="@string/text_webShare" android:name="com.genonbeta.TrebleShot.activity.WebShareActivity"/>
+        <provider android:name="androidx.core.content.FileProvider" android:exported="false" android:authorities="com.kd.speedshare.fileprovider" android:grantUriPermissions="true">
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+        </provider>
+        <receiver android:name="com.genonbeta.TrebleShot.receiver.NetworkStatusReceiver" android:process=":transfer">
+            <intent-filter>
+                <action android:name="android.net.wifi.WIFI_STATE_CHANGED"/>
+                <action android:name="android.net.wifi.WIFI_AP_STATE_CHANGED"/>
+                <action android:name="android.net.wifi.STATE_CHANGE"/>
+                <action android:name="android.net.wifi.p2p.CONNECTION_STATE_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.genonbeta.TrebleShot.receiver.DialogEventReceiver" android:process=":transfer"/>
+        <service android:label="@string/text_communicationService" android:name="com.genonbeta.TrebleShot.service.CommunicationService" android:enabled="true" android:process=":transfer"/>
+        <service android:label="@string/text_chooserTargetService" android:name="com.genonbeta.TrebleShot.service.DeviceChooserService" android:permission="android.permission.BIND_CHOOSER_TARGET_SERVICE">
+            <intent-filter>
+                <action android:name="android.service.chooser.ChooserTargetService"/>
+            </intent-filter>
+        </service>
+        <service android:name="com.genonbeta.TrebleShot.service.DeviceScannerService">
+            <intent-filter>
+                <action android:name="genonbeta.intent.action.SCAN_DEVICES"/>
+                <action android:name="genonbeta.intent.action.ADD_IP"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+            </intent-filter>
+        </service>
+        <service android:label="@string/text_workerService" android:name="com.genonbeta.TrebleShot.service.WorkerService"/>
+        <service android:label="@string/text_shareFiles" android:icon="@drawable/ic_trebleshot_white_24dp_static" android:name="com.genonbeta.TrebleShot.service.CommunicationToggleTile" android:permission="android.permission.BIND_QUICK_SETTINGS_TILE" android:process=":transfer">
+            <intent-filter>
+                <action android:name="android.service.quicksettings.action.QS_TILE"/>
+            </intent-filter>
+        </service>
+        <activity android:theme="@style/zxing_CaptureTheme" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:clearTaskOnLaunch="true" android:stateNotNeeded="true" android:screenOrientation="sensorLandscape" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <meta-data android:name="com.bumptech.glide.integration.okhttp3.OkHttpGlideModule" android:value="GlideModule"/>
+        <receiver android:name="com.google.android.gms.measurement.AppMeasurementReceiver" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementService" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.android.gms.measurement.AppMeasurementJobService" android:permission="android.permission.BIND_JOB_SERVICE" android:enabled="true" android:exported="false"/>
+        <service android:name="com.google.firebase.components.ComponentDiscoveryService" android:exported="false" android:directBootAware="true">
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+            <meta-data android:name="com.google.firebase.components:com.google.firebase.installations.FirebaseInstallationsRegistrar" android:value="com.google.firebase.components.ComponentRegistrar"/>
+        </service>
+        <activity android:theme="@style/Theme.Translucent" android:name="com.google.android.gms.ads.AdActivity" android:exported="false" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+        <provider android:name="com.google.android.gms.ads.MobileAdsInitProvider" android:exported="false" android:authorities="com.kd.speedshare.mobileadsinitprovider" android:initOrder="100"/>
+        <provider android:name="com.google.firebase.provider.FirebaseInitProvider" android:exported="false" android:authorities="com.kd.speedshare.firebaseinitprovider" android:initOrder="100"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+        <meta-data android:name="com.android.vending.splits.required" android:value="true"/>
+        <meta-data android:name="com.android.vending.splits" android:value="@xml/splits0"/>
+        <meta-data android:name="com.android.vending.derived.apk.id" android:value="8"/>
+    </application>
+</manifest>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="?attr/rectSelector" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListContentLayoutStyle">
+    <ImageView android:id="@+id/image" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/text_image" style="@style/ListContentIconStyle"/>
+    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/actionImage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/text_image"/>
+    <TextView android:textSize="@dimen/font_size_big" android:gravity="start" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/actionImage" android:layout_toRightOf="@+id/image" android:layout_centerVertical="true" style="@style/TextAppearance.Primary"/>
+</RelativeLayout>

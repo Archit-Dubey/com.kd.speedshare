@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:id="@+id/layout" android:background="@drawable/rect_selector" android:layout_width="match_parent" android:layout_height="wrap_content" style="@style/ListContentLayoutStyle.Narrow.WithOverflowButton">
+    <ImageView android:id="@+id/visitView" android:background="@drawable/playmusicicon" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:srcCompat="@color/blankcolor" style="@style/OverflowButton"/>
+    <FrameLayout android:id="@+id/layout_image" android:background="@drawable/musicicon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/ListContentIconStyle">
+        <include layout="@layout/generic_view_selection"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/visitView" android:layout_toRightOf="@+id/layout_image" android:layout_centerVertical="true">
+        <TextView android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Primary"/>
+        <View android:layout_width="wrap_content" android:layout_height="@dimen/padding_list_content_two_lines_separation_height"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Secondary.SingleLine"/>
+            <TextView android:id="@+id/textSeparator1" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextSeparatorMiddleDot"/>
+            <TextView android:id="@+id/text3" android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/TextAppearance.Secondary.SingleLine"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@+id/layout_barcode_connect_barcode_view" android:layout_width="match_parent" android:layout_height="match_parent" app:zxing_preview_scaling_strategy="1" app:zxing_scanner_layout="@layout/external_layout_barcode_scanner"/>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/layout_barcode_connect_conduct_container" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/layout_barcode_connect_conduct_image" android:layout_width="wrap_content" android:layout_height="wrap_content" app:tint="?attr/colorPassive"/>
+        <TextView android:gravity="center" android:id="@+id/layout_barcode_connect_conduct_text" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginBottom="8dp" android:text="@string/text_scanQRCodeHelp" style="@style/TextAppearance.Primary.Normal"/>
+        <androidx.appcompat.widget.AppCompatButton android:layout_gravity="center" android:id="@+id/layout_barcode_connect_conduct_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/butn_enable" style="?attr/borderlessButtonStyle"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center" android:id="@+id/layout_barcode_connect_mode_text_indicator" android:background="?attr/rippleBackground" android:visibility="gone" android:layout_width="40dp" android:layout_height="40dp" app:srcCompat="@drawable/ic_short_text_white_24dp"/>
+    <RelativeLayout android:id="@+id/container_task" android:background="?android:attr/windowBackground" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:id="@+id/task_progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <TextView android:textColor="?attr/colorSecondary" android:gravity="center_horizontal" android:id="@+id/task_help_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/mesg_completing" android:layout_below="@+id/task_progress_bar"/>
+        <androidx.appcompat.widget.AppCompatButton android:id="@+id/task_interrupter_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="@string/butn_cancel" android:layout_below="@+id/task_help_text" android:layout_centerHorizontal="true" style="?attr/borderlessButtonStyle"/>
+    </RelativeLayout>
+</FrameLayout>

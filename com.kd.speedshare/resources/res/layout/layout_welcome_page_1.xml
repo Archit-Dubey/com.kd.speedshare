@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:gravity="center" android:orientation="vertical" android:background="@drawable/app_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/layout_welcome_page_1_splash_image" android:layout_width="128dp" android:layout_height="128dp" android:tint="#ffffff" app:srcCompat="@drawable/applogo"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/layout_welcome_page_1_details" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+        <TextView android:textSize="24sp" android:textColor="#f3efef" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_appName" style="@style/TextAppearance.Primary.Big"/>
+        <TextView android:textSize="21sp" android:textColor="#f3efef" android:gravity="center" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_welcome" style="@style/TextAppearance.Secondary.Big"/>
+        <TextView android:textSize="24sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Made in India ����"/>
+    </LinearLayout>
+    <TextView android:textSize="24sp" android:textStyle="normal|bold|italic" android:textColor="#ffffff" android:gravity="center" android:id="@+id/textView4" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Atmanirbhar Bharat" style="@style/Widget.AppCompat.TextView"/>
+</LinearLayout>

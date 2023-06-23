@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <CheckBoxPreference android:key="scan_devices_auto" android:defaultValue="false"/>
+    <CheckBoxPreference android:key="trust_always" android:defaultValue="false"/>
+    <CheckBoxPreference android:key="hotspot_trust" android:defaultValue="true"/>
+    <CheckBoxPreference android:key="kill_service_on_exit" android:defaultValue="true"/>
+    <CheckBoxPreference android:key="qr_trust" android:defaultValue="true"/>
+    <CheckBoxPreference android:key="notification_vibrate" android:defaultValue="true"/>
+    <CheckBoxPreference android:key="notification_sound" android:defaultValue="true"/>
+    <CheckBoxPreference android:key="notification_light" android:defaultValue="true"/>
+    <CheckBoxPreference android:key="notification_vibrate" android:defaultValue="true"/>
+    <CheckBoxPreference android:key="notification_sound" android:defaultValue="true"/>
+    <CheckBoxPreference android:key="notification_light" android:defaultValue="true"/>
+    <CheckBoxPreference android:key="nsd_enabled" android:defaultValue="true"/>
+    <CheckBoxPreference android:key="developer_mode" android:defaultValue="false"/>
+    <CheckBoxPreference android:key="custom_fonts" android:defaultValue="false"/>
+    <CheckBoxPreference android:key="allow_autoconnect" android:defaultValue="false"/>
+    <CheckBoxPreference android:key="show_system_apps" android:defaultValue="false"/>
+    <CheckBoxPreference android:key="dark_theme" android:defaultValue="false"/>
+    <CheckBoxPreference android:key="load_thumbnails" android:defaultValue="true"/>
+</PreferenceScreen>

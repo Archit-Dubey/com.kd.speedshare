@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="@string/text_application">
+        <EditTextPreference android:icon="@drawable/devicenameicon" android:maxLength="32" android:title="@string/text_deviceName" android:key="device_name" android:summary="@string/text_deviceNameSummary" android:dialogTitle="@string/text_deviceNameTitle" android:inputType="text"/>
+        <CheckBoxPreference android:icon="@drawable/choosefonticon" android:title="@string/const_text_useAppFonts" android:key="custom_fonts" android:summary="@string/const_text_useAppFontsSummary" android:defaultValue="false"/>
+        <CheckBoxPreference android:icon="@drawable/trustzoneicon" android:title="@string/text_trustZoneEnabled" android:key="trust_always" android:summary="@string/text_trustZoneEnabledSummary" android:defaultValue="false"/>
+        <CheckBoxPreference android:icon="@drawable/hotspoticon" android:title="@string/text_hotspotStartsTrustZone" android:key="hotspot_trust" android:summary="@string/text_hotspotStartsTrustZoneSummary" android:defaultValue="false"/>
+        <CheckBoxPreference android:icon="@drawable/qrcodeicon" android:title="@string/text_qrAllowTrustZone" android:key="qr_trust" android:summary="@string/text_qrAllowTrustZoneSummary" android:defaultValue="true"/>
+        <PreferenceScreen android:icon="@drawable/storahepathicon" android:title="@string/text_storagePath" android:summary="@string/text_storagePathSummary">
+            <intent android:action="com.genonbeta.intent.action.UPDATE_STORAGE_PATH"/>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

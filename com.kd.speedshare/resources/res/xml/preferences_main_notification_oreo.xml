@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <PreferenceCategory android:title="@string/text_notification">
+        <PreferenceScreen android:icon="@drawable/notificationsettingsicon" android:title="@string/text_notificationSettings" android:summary="@string/text_notificationSettingsSummary" app:icon="@drawable/notificationsettingsicon">
+            <intent android:action="android.settings.APP_NOTIFICATION_SETTINGS">
+                <extra android:name="android.provider.extra.APP_PACKAGE" android:value="@string/conf_packageName"/>
+            </intent>
+        </PreferenceScreen>
+    </PreferenceCategory>
+</PreferenceScreen>

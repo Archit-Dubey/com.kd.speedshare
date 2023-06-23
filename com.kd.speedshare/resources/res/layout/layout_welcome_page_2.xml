@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:background="@drawable/app_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/mainContainer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="0dp" android:layout_centerInParent="true" layout="@layout/header_default_device"/>
+    <TextView android:textSize="@dimen/font_size_title" android:textColor="#f3efef" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/text_introSetUpProfile" android:layout_above="@+id/mainContainer" android:layout_alignParentTop="true" style="@style/TextAppearance.Primary.Big"/>
+</RelativeLayout>

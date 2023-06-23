@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt">
+    <group android:id="@+id/nav_group_other">
+        <item android:icon="@drawable/managedevicesicon" android:id="@+id/menu_activity_main_manage_devices" android:orderInCategory="1" android:title="@string/text_manageDevices"/>
+        <item android:icon="@drawable/shareviabrowsericon" android:id="@+id/menu_activity_main_web_share" android:orderInCategory="11" android:title="@string/butn_webShare"/>
+        <item android:icon="@drawable/sharethisapp" android:id="@+id/menu_activity_main_send_application" android:orderInCategory="11" android:title="@string/butn_shareTrebleshot"/>
+        <item android:icon="@drawable/settingsicon" android:id="@+id/menu_activity_main_preferences" android:orderInCategory="12" android:title="@string/text_preferences"/>
+        <item android:icon="@drawable/ic_poll_box_white_24dp" android:id="@+id/menu_activity_main_dev_survey" android:visible="false" android:orderInCategory="13" android:title="@string/text_developmentSurvey"/>
+        <item android:icon="@drawable/abouticon" android:id="@+id/menu_activity_main_about" android:orderInCategory="13" android:title="@string/text_about"/>
+        <item android:icon="@drawable/exiticon" android:id="@+id/menu_activity_main_exit" android:orderInCategory="14" android:title="@string/butn_exit"/>
+    </group>
+    <group android:id="@+id/nav_group_quick_settings">
+        <item android:icon="@drawable/ic_compare_arrows_white_24dp" android:id="@+id/menu_activity_trustzone" android:orderInCategory="15" android:title="@string/butn_turnTrustZoneOff"/>
+    </group>
+    <group android:id="@+id/nav_group_support">
+        <item android:icon="@drawable/ic_favorite_white_24dp" android:id="@+id/menu_activity_main_donate" android:visible="false" android:orderInCategory="17" android:title="@string/butn_donate"/>
+        <item android:id="@+id/menu_activity_main_ts_dt" android:orderInCategory="18" app:actionLayout="@layout/layout_main_navigationview_footer"/>
+    </group>
+</menu>

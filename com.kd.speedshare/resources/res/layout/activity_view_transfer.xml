@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.google.android.material.appbar.AppBarLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <androidx.appcompat.widget.Toolbar android:id="@+id/toolbar" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+        <com.genonbeta.android.framework.widget.PowerfulActionMode android:id="@+id/activity_transaction_action_mode" android:visibility="gone" android:layout_width="match_parent" android:layout_height="?attr/actionBarSize"/>
+        <TextView android:gravity="center" android:id="@+id/activity_transaction_no_devices_warning" android:paddingLeft="10dp" android:paddingRight="10dp" android:paddingBottom="10dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/text_noDeviceForTransfer" style="@style/TextAppearance.Primary.Small.SingleLine"/>
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout android:id="@+id/activity_transaction_content_frame" android:layout_width="match_parent" android:layout_height="match_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

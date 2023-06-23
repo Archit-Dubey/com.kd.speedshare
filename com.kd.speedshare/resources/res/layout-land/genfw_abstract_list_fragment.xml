@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/genfw_customListFragment_customViewContainer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:id="@+id/genfw_customListFragment_defaultViewContainer" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/genfw_customListFragment_progressView" android:visibility="gone" android:layout_width="210dp" android:layout_height="wrap_content" android:indeterminate="true" style="?android:attr/progressBarStyleHorizontal"/>
+        <FrameLayout android:id="@+id/genfw_customListFragment_container" android:layout_width="match_parent" android:layout_height="match_parent">
+            <FrameLayout android:id="@+id/genfw_customListFragment_listViewContainer" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/genfw_customListFragment_emptyView" android:paddingLeft="15dp" android:paddingRight="15dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/genfw_customListfragment_visualContainer" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <androidx.appcompat.widget.AppCompatImageView android:id="@+id/genfw_customListFragment_emptyImageView" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" style="?attr/genfw_customListFragmentEmptyImageStyle"/>
+                    <TextView android:id="@+id/genfw_customListFragment_emptyTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="5" style="?attr/genfw_customListFragmentEmptyTextStyle"/>
+                </LinearLayout>
+                <androidx.appcompat.widget.AppCompatButton android:layout_gravity="center_horizontal" android:id="@+id/genfw_customListFragment_emptyActionButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" style="?attr/genfw_customListFragmentEmptyActionButtonStyle"/>
+            </LinearLayout>
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

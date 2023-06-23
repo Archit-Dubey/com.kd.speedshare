@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:background="@drawable/app_background" android:fitsSystemWindows="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <androidx.viewpager.widget.ViewPager android:id="@+id/activity_welcome_view_pager" android:fitsSystemWindows="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <FrameLayout android:layout_gravity="bottom" android:background="?attr/backgroundGradientBottom" android:paddingLeft="@dimen/short_content_width_padding" android:paddingRight="@dimen/short_content_width_padding" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center" android:id="@+id/activity_welcome_progress_bar" android:layout_width="48dp" android:layout_height="48dp" style="@style/Widget.TrebleShot.ProgressBar.Horizontal.Oval"/>
+        <androidx.appcompat.widget.AppCompatImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/activity_welcome_view_previous" android:layout_margin="@dimen/fab_margin" android:tint="#ffffff" app:srcCompat="@drawable/backwardicon" style="@style/OverflowButton"/>
+        <com.google.android.material.floatingactionbutton.FloatingActionButton android:layout_gravity="end" android:id="@+id/activity_welcome_view_next" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/fab_margin" android:foreground="@drawable/forwardicon" android:foregroundGravity="center" app:backgroundTint="#ffffff" app:fabSize="-1"/>
+    </FrameLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

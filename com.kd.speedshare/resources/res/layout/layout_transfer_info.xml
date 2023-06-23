@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aapt="http://schemas.android.com/aapt" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:padding="24dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_fileName" style="@style/TextAppearance.Primary"/>
+        <TextView android:id="@+id/transfer_info_file_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="4" style="@style/TextAppearance.Secondary"/>
+        <View android:layout_width="wrap_content" android:layout_height="10dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_fileSize" style="@style/TextAppearance.Primary"/>
+        <TextView android:id="@+id/transfer_info_file_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_empty" style="@style/TextAppearance.Secondary"/>
+        <View android:layout_width="wrap_content" android:layout_height="10dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_fileMime" style="@style/TextAppearance.Primary"/>
+        <TextView android:id="@+id/transfer_info_file_mime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_empty" style="@style/TextAppearance.Secondary"/>
+        <View android:layout_width="wrap_content" android:layout_height="10dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_fileStatus" style="@style/TextAppearance.Primary"/>
+        <TextView android:id="@+id/transfer_info_file_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_empty" style="@style/TextAppearance.Secondary"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/transfer_info_incoming_details_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <View android:layout_width="wrap_content" android:layout_height="10dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_receivedSize" style="@style/TextAppearance.Primary"/>
+            <TextView android:id="@+id/transfer_info_received_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_empty" style="@style/TextAppearance.Secondary"/>
+        </LinearLayout>
+        <View android:layout_width="wrap_content" android:layout_height="10dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_location" style="@style/TextAppearance.Primary"/>
+        <TextView android:id="@+id/transfer_info_pseudo_location" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_empty" android:maxLines="20" style="@style/TextAppearance.Secondary"/>
+    </LinearLayout>
+</ScrollView>

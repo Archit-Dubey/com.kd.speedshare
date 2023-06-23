@@ -1,5 +1,5 @@
 # Speed Share
-ShareFiles is a file-sharing Android app that allows users to share files between Android and non-Android devices.
+Speed Share is a file-sharing Android app that allows users to share files between Android and non-Android devices.
 
 ## Table of Contents
 *	Introduction

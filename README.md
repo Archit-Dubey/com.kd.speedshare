@@ -31,10 +31,10 @@ To install the app, you can download either the APK file or the entire project f
 3.	Download the necessary dependencies by clicking on **Sync Project with Gradle Files**.
 
 ## Screenshots
-![](https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/1.png) | ![](https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/2.png)
-![](https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/3.png) | ![](https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/4.png)
-![](https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/5.png) | ![](https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/6.png)
-![](https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/7.png) | ![](https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/8.png)
+<img src="https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/1.png" width="210" /> | <img src="https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/2.png" width="210" /> | <img src="https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/3.png" width="210" /> | <img src="https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/4.png" width="210" />
+
+ <img src="https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/5.png" width="210" /> | <img src="https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/6.png" width="210" /> | <img src="https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/7.png" width="210" /> | <img src="https://github.com/Archit-Dubey/com.kd.speedshare/blob/master/Screenshots/8.png" width="210" />
+
 
 
 ## Contributing
